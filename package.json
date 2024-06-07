@@ -2,7 +2,7 @@
   "name": "book-shop",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://corediLeone.github.io/cyberbook-web",
+  "homepage": "https://corediLeone.github.io/cyberbook-web/dist",
   "type": "module",
   "scripts": {
     "dev": "vite",
