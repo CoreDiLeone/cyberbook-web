@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --steel-pink: #B830AA;
+    --dark-purple: #1B0E2B;
+    --aquamarine: #00FFE0;
+    --inter: "Inter", sans-serif;
+    --pink: #FF2BE9;
+}
+
+.main-container{
+    background-image: url("../images/img-section-hero.svg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    color: #ffff;
+    font-family: var(--inter);
+}
+
+.main-title{
+    background-color: var(--dark-purple);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 4.5em;
+}
+
+.title-cyber{
+    color: var(--pink);
+}
+
+.title-book{
+    color: var(--aquamarine);
+}
+
+.main-subtitle{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.btn-catalog{
+    background-color: var(--dark-purple);
+    color: #fff;
+    border: 2px solid var(--dark-purple);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bi-arrow-right{
+    margin-left: 4px;
+}
+.btn-catalog:hover{
+    background-color: #fff;
+    color: var(--dark-purple);
+}
+
+@media screen and (max-width: 800px) {
+    .main-title{
+        font-size: 3em;
+    }
+    .main-subtitle{
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}

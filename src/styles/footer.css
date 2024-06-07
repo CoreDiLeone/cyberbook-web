@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --steel-pink: #B830AA;
+    --dark-purple: #1B0E2B;
+    --aquamarine: #00FFE0;
+    --inter: "Inter", sans-serif;
+    --pink: #FF2BE9;
+}
+
+.container-footer{
+    width: 100%;
+    height: 70px;
+    background-color: var(--steel-pink);
+    position: relative;
+    
+}
+.text-footer{
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-family: var(--inter);
+}
+.footer{
+    bottom: -331px;
+}

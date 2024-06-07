@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --steel-pink: #B830AA;
+    --dark-purple: #1B0E2B;
+    --aquamarine: #00FFE0;
+    --inter: "Inter", sans-serif;
+    --pink: #FF2BE9;
+}
+.mostread-section{
+    background-color: var(--steel-pink);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.mostread-card{
+    max-width: 850px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.card-body{
+    font-family: var(--inter);
+    padding-inline: 20px;
+}
+.mostread-bg-img{
+    display: none;
+}
+.btn-mostread{
+    background-color: var(--dark-purple);
+    border: 2px solid var(--dark-purple);
+    padding: 5px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-mostread:hover{
+    background-color: #fff;
+    border: 2px solid var(--dark-purple);
+    color: var(--dark-purple);
+}
+
+@media screen and (max-width: 800px) {
+    .mostread-card{
+        display: none;
+    }
+    .mostread-bg-img{
+        display: block;
+        max-width: 500px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .mostread-card-img{
+        width: 100%;
+       
+    }
+    .mostread-card-info{
+        position: absolute;
+        padding: 20px 15px 0px;
+        color: var(--dark-purple);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mostread-card-info .card-title{
+        background-color: rgb(27, 14, 43, 0.6);
+        color: #fff;
+        font-size: 1.5em;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .mostread-card-info .card-text{
+        background-color: rgb(27, 14, 43, 0.6);
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        display: none;
+    }
+    .btn-mostread{
+
+        margin-top: 20px;
+    }
+    
+}

@@ -1,0 +1,58 @@
+:root{
+    --steel-pink: #B830AA;
+    --dark-purple: #1B0E2B;
+    --aquamarine: #00FFE0;
+    --inter: "Inter", sans-serif;
+    --pink: #FF2BE9;
+}
+
+.main-container-card{
+    position: relative;
+    top: 60px;
+    font-family: var(--inter);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sub-container-card{
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    width: 200px;
+    max-height: 350px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-img{
+    width: 120px;
+    height: 170px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+.card-title, .card-amount{
+    font-size: 15px;
+    color: var(--dark-purple);
+
+}
+.btn-product{
+    background-color: var(--dark-purple);
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid var(--dark-purple);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.btn-product:hover{
+    background-color: #fff;
+    color: var(--dark-purple);
+}

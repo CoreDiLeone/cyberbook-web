@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --steel-pink: #B830AA;
+    --dark-purple: #1B0E2B;
+    --aquamarine: #00FFE0;
+    --inter: "Inter", sans-serif;
+    --pink: #FF2BE9;
+}
+
+.cards-wrapper{
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.card-visit{
+    width: 12rem;
+    transition: transform .3s ease;
+}
+.card-visit:hover{
+    transform: scale(1.07);
+}
+.carousel{
+    max-width: 1150px;
+    margin: 200px auto 0px;
+}
+.btn-visit{
+
+    background-color: var(--dark-purple);
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid var(--dark-purple);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--inter);
+    margin-top: 4px;
+    font-size: 14px;
+}
+.btn-visit:hover{
+    background-color: #fff;
+    color: var(--dark-purple);
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .card {
+        display: block;
+        width: 12rem;
+    }
+    .card-visit:nth-child(n+5) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+   .card-visit:not(:first-child){
+        display: none;
+        margin: auto;
+    }
+    .card{
+        width: 14rem;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        margin: 0px 40px;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev{
+   
+    width: 50px;
+    padding: 0;
+    background: var(--dark-purple);
+    height: 50px;
+    border-radius: 8px;
+    align-self: center;
+
+}
+
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{
+
+    font-size: 3.5rem;
+    text-align: center;
+}
